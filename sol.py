@@ -8,7 +8,7 @@ df = pd.read_csv('C:/Users/shrey/Downloads/DE assessment/phrases (1).csv',encodi
 wv=KeyedVectors.load_word2vec_format('vectors.csv')
 def assign_embeddings(df):
     phrase_embeddings=[]
-    for index,rows in df.itterrows:
+    for index,rows in df.itterrows():
         phrase=rows['Phrases']
         words=phrase.split()
         word_embeddings=[]
